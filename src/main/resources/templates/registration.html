@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+
+</head>
+<body>
+<h1>register to CarRent</h1>
+<form action="#" method="post" th:action="@{/carRent/register}" th:object="${user}" >
+    <p>First name: <input type="text" th:field="*{firstName}" /></p>
+    <p>Last name: <input type="text" th:field="*{lastName}" /></p>
+    <p>email: <input type="text" th:field="*{email}" /></p>
+    <p>phone: <input type="text" th:field="*{phone}" /></p>
+    <p>password: <input type="text" th:field="*{password}" /></p>
+
+    <input type="submit" value="Save" />
+</form>
+<!--<a th:href="@{/carRent/login}">Register</a>-->
+</body>
+</html>
